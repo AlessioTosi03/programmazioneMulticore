@@ -1,7 +1,7 @@
 all: main run
 
 run:
-	mpirun ./build/main
+	mpirun -n 16 ./build/main
 
 main: main.c
 	mkdir -p build
